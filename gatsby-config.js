@@ -5,6 +5,17 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    {
+      resolve: `gatsby-source-kentico-cloud`,
+      options: {
+        deliveryClientConfig: {
+          projectId: `3362818f-09cd-00f4-faee-e40f4277cc54`,
+        },
+        languageCodenames: [
+          `default`,
+        ]
+      }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
